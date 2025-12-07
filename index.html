@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Herbal Beauty - UMKM Kecantikan Alami</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="img/logo.png">
+</head>
+<body>
+    <!-- Navbar -->
+    <nav>
+        <div class="container">
+            <img src="img/logo.png" alt="Logo Herbal Beauty" class="logo">
+            <ul>
+                <li><a href="#home">Home</a></li>
+                <li><a href="#produk">Produk</a></li>
+                <li><a href="#blog">Blog</a></li>
+                <li><a href="#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Home Section -->
+    <section id="home" class="hero">
+        <div class="container">
+            <img src="img/hero-banner.jpg" alt="Banner Produk Herbal Beauty" class="hero-img">
+            <h1>Herbal Beauty</h1>
+            <p>Tagline: Kecantikan Alami dari Bahan Herbal Terbaik</p>
+            <div class="cta-buttons">
+                <a href="#produk" class="btn">Lihat Produk</a>
+                <a href="https://wa.me/628123456789?text=Halo,%20saya%20ingin%20informasi%20produk%20Herbal%20Beauty" class="btn whatsapp-btn">
+                    <img src="img/whatsapp-icon.png" alt="WA"> Pesan via WhatsApp
+                </a>
+            </div>
+            <div class="keunggulan">
+                <h2>Keunggulan Kami</h2>
+                <ul>
+                    <li>Bahan alami 100% tanpa bahan kimia</li>
+                    <li>Produk handmade dengan kualitas premium</li>
+                    <li>Pengiriman cepat dan pelayanan ramah</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Produk Section -->
+    <section id="produk" class="produk">
+        <div class="container">
+            <h2>Produk Kami</h2>
+            <div class="produk-grid">
+                <div class="produk-card" data-produk="Sabun Lavender">
+                    <img src="img/produk1.jpg" alt="Sabun Lavender">
+                    <h3>Sabun Lavender</h3>
+                    <p>Rp 25.000</p>
+                    <button class="btn detail-btn">Detail Produk</button>
+                </div>
+                <div class="produk-card" data-produk="Lotion Aloe Vera">
+                    <img src="img/produk2.jpg" alt="Lotion Aloe Vera">
+                    <h3>Lotion Aloe Vera</h3>
+                    <p>Rp 35.000</p>
+                    <button class="btn detail-btn">Detail Produk</button>
+                </div>
+                <div class="produk-card" data-produk="Minyak Esensial Peppermint">
+                    <img src="img/produk3.jpg" alt="Minyak Esensial Peppermint">
+                    <h3>Minyak Esensial Peppermint</h3>
+                    <p>Rp 40.000</p>
+                    <button class="btn detail-btn">Detail Produk</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Detail Produk -->
+    <div id="produk-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-body">
+                <img id="popup-img" src="" alt="Produk">
+                <div class="popup-info">
+                    <h3 id="popup-nama"></h3>
+                    <p id="popup-harga"></p>
+                    <p id="popup-deskripsi"></p>
+                    <p id="popup-varian"></p>
+                    <a id="popup-wa" href="" class="btn whatsapp-btn">
+                        <img src="img/whatsapp-icon.png" alt="WA"> Pesan via WhatsApp
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Blog Section -->
+    <section id="blog" class="blog">
+        <div class="container">
+            <h2>Blog & Artikel</h2>
+            <div class="blog-grid">
+                <div class="blog-card" data-blog="1">
+                    <img src="img/blog1.jpg" alt="Manfaat Sabun Herbal">
+                    <h3>Manfaat Sabun Herbal untuk Kulit</h3>
+                    <p>Kutipan: Sabun herbal dapat membersihkan kulit tanpa iritasi...</p>
+                    <button class="btn baca-btn">Baca Selengkapnya</button>
+                </div>
+                <div class="blog-card" data-blog="2">
+                    <img src="img/blog2.jpg" alt="Cara Merawat Kulit Alami">
+                    <h3>Cara Merawat Kulit dengan Bahan Alami</h3>
+                    <p>Kutipan: Perawatan kulit alami menggunakan bahan dari alam...</p>
+                    <button class="btn baca-btn">Baca Selengkapnya</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Popup Detail Blog -->
+    <div id="blog-popup" class="popup">
+        <div class="popup-content">
+            <span class="close">&times;</span>
+            <div class="popup-body">
+                <img id="blog-popup-img" src="" alt="Artikel">
+                <h3 id="blog-popup-judul"></h3>
+                <p id="blog-popup-tanggal"></p>
+                <p id="blog-popup-isi"></p>
+            </div>
+        </div>
+    </div>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="kontak">
+        <div class="container">
+            <h2>Kontak Kami</h2>
+            <form id="kontak-form">
+                <input type="text" id="nama" placeholder="Nama" required>
+                <input type="tel" id="hp" placeholder="Nomor HP" required>
+                <input type="email" id="email" placeholder="Email" required>
+                <textarea id="pesan" placeholder="Pesan" required></textarea>
+                <button type="submit" class="btn">Kirim Pesan</button>
+            </form>
+            <div id="notif" class="notif"></div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div>
+                    <h4>Herbal Beauty</h4>
+                    <p>UMKM kecantikan alami dengan bahan herbal terbaik.</p>
+                </div>
+                <div>
+                    <h4>Jam Operasional</h4>
+                    <p>Senin - Jumat: 08:00 - 17:00<br>Sabtu: 09:00 - 15:00</p>
+                </div>
+                <div>
+                    <h4>Sosial Media</h4>
+                    <p>Instagram: @herbalbeauty<br>Facebook: Herbal Beauty Official</p>
+                </div>
+            </div>
+            <p>&copy; 2023 Herbal Beauty. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
